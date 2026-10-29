@@ -1,137 +1,248 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0b0b12">
-  <title>AFK Hub</title>
+  <title>AFK Hub — Gaming Control Center</title>
+  <meta name="description" content="Willkommen bei AFK Hub. Entdecke die Funktionen und Möglichkeiten deines Gaming Dashboards.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="brand"><span class="brand-icon">A</span> AFK <b>HUB</b></div>
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-icon">A</span>
+      AFK <span class="purple">HUB</span>
+    </a>
+
     <nav>
-      <button class="nav-item active" data-page="dashboard">⌂ Dashboard</button>
-      <button class="nav-item" data-page="games">▦ Spiele</button>
-      <button class="nav-item" data-page="profiles">◉ Profile</button>
-      <button class="nav-item" data-page="settings">⚙ Einstellungen</button>
+      <a href="#features">Funktionen</a>
+      <a href="#how-it-works">So funktioniert's</a>
+      <a href="#about">Über AFK Hub</a>
     </nav>
-    <div class="sidebar-bottom">
-      <span class="status-dot"></span> System bereit
-      <p class="muted">AFK Hub · Lokal</p>
-    </div>
-  </aside>
 
-  <main class="main">
-    <header class="topbar">
-      <div>
-        <div class="eyebrow">GAMING CONTROL CENTER</div>
-        <h1 id="page-title">Dashboard</h1>
-      </div>
-      <div class="user-chip"><span class="avatar">G</span> Gast</div>
-    </header>
+    <a href="#features" class="nav-button">Entdecken ↗</a>
+  </header>
 
-    <section id="dashboard" class="page active">
-      <div class="hero">
-        <div class="hero-content">
-          <span class="pill">✦ DEIN GAMING HUB</span>
-          <h2>Dein nächstes<br><span>Gaming-Abenteuer.</span></h2>
-          <p>Verwalte deine Spiele und Profile an einem Ort.</p>
-          <button class="primary-btn" data-goto="games">Spiele entdecken ↗</button>
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          GAMING CONTROL CENTER
         </div>
-        <div class="orb">AFK<span>+</span></div>
+
+        <h1>Dein Gaming.<br>
+          <span>Dein Hub.</span>
+        </h1>
+
+        <p class="hero-description">
+          Willkommen bei AFK Hub. Organisiere deine Gaming-Profile,
+          entdecke Spiele und verwalte deine Demo-Sitzungen an einem Ort.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#features" class="button button-primary">
+            Funktionen entdecken <span>↗</span>
+          </a>
+          <a href="#how-it-works" class="button button-secondary">
+            Mehr erfahren
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span><span class="check">✓</span> Übersichtliches Dashboard</span>
+          <span><span class="check">✓</span> Lokale Profile</span>
+          <span><span class="check">✓</span> Für mobile Geräte</span>
+        </div>
       </div>
 
-      <div class="stats">
-        <article class="stat-card">
-          <span class="stat-icon purple">▦</span>
-          <p>Spiele</p><h3 id="game-count">6</h3>
+      <div class="preview">
+        <div class="preview-window">
+          <div class="preview-top">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>AFK HUB / DASHBOARD</span>
+            <span class="preview-status">● ONLINE</span>
+          </div>
+
+          <div class="preview-body">
+            <aside class="preview-sidebar">
+              <div class="mini-logo">A</div>
+              <div class="mini-item selected">⌂</div>
+              <div class="mini-item">▦</div>
+              <div class="mini-item">◉</div>
+              <div class="mini-item">⚙</div>
+            </aside>
+
+            <div class="preview-content">
+              <span class="preview-label">DEIN ÜBERBLICK</span>
+              <h3>Dashboard</h3>
+
+              <div class="preview-stats">
+                <div><small>Spiele</small><strong>06</strong></div>
+                <div><small>Profile</small><strong>03</strong></div>
+                <div><small>Sitzungen</small><strong>02</strong></div>
+              </div>
+
+              <div class="preview-label game-label">DEINE SPIELE</div>
+
+              <div class="preview-game">
+                <span class="game-icon purple-bg">⚔</span>
+                <div><b>Blox Fruits</b><small>Adventure</small></div>
+                <span class="arrow">↗</span>
+              </div>
+
+              <div class="preview-game">
+                <span class="game-icon blue-bg">🏡</span>
+                <div><b>Brookhaven</b><small>Roleplay</small></div>
+                <span class="arrow">↗</span>
+              </div>
+
+              <div class="preview-game">
+                <span class="game-icon green-bg">🐾</span>
+                <div><b>Pet Simulator</b><small>Simulator</small></div>
+                <span class="arrow">↗</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-tag"><span>✦</span> Alles an einem Ort</div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="section-heading">
+        <span class="section-tag">FUNKTIONEN</span>
+        <h2>Mehr Überblick.<br><span>Weniger Aufwand.</span></h2>
+        <p>AFK Hub vereint deine wichtigsten Gaming-Optionen in einer klaren Oberfläche.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon icon-purple">▦</div>
+          <span class="feature-number">01</span>
+          <h3>Spielebibliothek</h3>
+          <p>Sieh dir die Beispiel-Spiele an und wähle ein Spiel für dein persönliches Profil aus.</p>
+          <span class="feature-link">Spiele entdecken <span>↗</span></span>
         </article>
-        <article class="stat-card">
-          <span class="stat-icon blue">◉</span>
-          <p>Profile</p><h3 id="profile-count">0</h3>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-blue">◉</div>
+          <span class="feature-number">02</span>
+          <h3>Profilverwaltung</h3>
+          <p>Erstelle verschiedene Profile, vergib Namen und speichere deine individuellen Einstellungen.</p>
+          <span class="feature-link">Profile organisieren <span>↗</span></span>
         </article>
-        <article class="stat-card">
-          <span class="stat-icon green">▶</span>
-          <p>Demo-Sitzungen</p><h3 id="session-count">0</h3>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-green">▶</div>
+          <span class="feature-number">03</span>
+          <h3>Demo-Sitzungen</h3>
+          <p>Teste die verfügbaren Sitzungsoptionen und starte oder stoppe Simulationen direkt im Dashboard.</p>
+          <span class="feature-link">Demo ausprobieren <span>↗</span></span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-orange">⚙</div>
+          <span class="feature-number">04</span>
+          <h3>Einstellungen</h3>
+          <p>Exportiere deine Profildaten oder setze die lokalen Daten bei Bedarf zurück.</p>
+          <span class="feature-link">Alles verwalten <span>↗</span></span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-pink">▣</div>
+          <span class="feature-number">05</span>
+          <h3>Mobiles Design</h3>
+          <p>Die Oberfläche passt sich verschiedenen Bildschirmgrößen an, auch auf dem iPad und Smartphone.</p>
+          <span class="feature-link">Flexibel nutzen <span>↗</span></span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-cyan">◇</div>
+          <span class="feature-number">06</span>
+          <h3>Lokale Speicherung</h3>
+          <p>Deine Profile bleiben in dieser Version im lokalen Browserspeicher deines Geräts erhalten.</p>
+          <span class="feature-link">Lokal organisiert <span>↗</span></span>
         </article>
       </div>
+    </section>
 
-      <div class="section-heading">
-        <div><h2>Beliebte Spiele</h2><p class="muted">Deine Spielebibliothek</p></div>
-        <button class="text-btn" data-goto="games">Alle ansehen →</button>
+    <section class="how section" id="how-it-works">
+      <div class="how-copy">
+        <span class="section-tag">ERSTE SCHRITTE</span>
+        <h2>In drei Schritten<br><span>startklar.</span></h2>
+        <p>Die Bedienung ist einfach. Erstelle ein Profil und probiere die Funktionen des Dashboards aus.</p>
       </div>
-      <div class="game-grid" id="featured-games"></div>
 
-      <div class="notice">
-        <span>ⓘ</span>
-        <div><b>Info</b><p>Der Demo-Modus simuliert Sitzungen nur innerhalb dieser Website. Er steuert Roblox nicht automatisch.</p></div>
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">01</div>
+          <div>
+            <h3>Spiel auswählen</h3>
+            <p>Öffne die Spielebibliothek und entscheide dich für ein Spiel.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">02</div>
+          <div>
+            <h3>Profil einrichten</h3>
+            <p>Lege einen Profilnamen fest und wähle deine gewünschte Demo-Aktion.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">03</div>
+          <div>
+            <h3>Funktionen testen</h3>
+            <p>Verwalte dein Profil und starte oder stoppe eine Demo-Sitzung.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="games" class="page">
-      <div class="section-heading">
-        <div><h2>Spielebibliothek</h2><p class="muted">Wähle ein Spiel für dein Profil.</p></div>
-      </div>
-      <div class="game-grid" id="all-games"></div>
-    </section>
-
-    <section id="profiles" class="page">
-      <div class="section-heading">
-        <div><h2>Deine Profile</h2><p class="muted">Speichere unterschiedliche Demo-Konfigurationen.</p></div>
-        <button class="primary-btn" id="new-profile">＋ Neues Profil</button>
-      </div>
-      <div id="profile-list" class="profile-list"></div>
-      <div id="profile-empty" class="empty-state">
-        <div class="empty-icon">◉</div>
-        <h3>Noch keine Profile</h3>
-        <p>Erstelle dein erstes Profil, um loszulegen.</p>
-        <button class="primary-btn" id="empty-create">Profil erstellen</button>
+    <section class="about section" id="about">
+      <div class="about-icon">A<span>+</span></div>
+      <div>
+        <span class="section-tag">ÜBER AFK HUB</span>
+        <h2>Dein zentraler<br>Gaming-Überblick.</h2>
+        <p>
+          AFK Hub ist ein Dashboard-Konzept für die Organisation von
+          Gaming-Profilen und Demo-Sitzungen. Diese Version speichert
+          Profile lokal im Browser und benötigt dafür kein eigenes Benutzerkonto.
+        </p>
       </div>
     </section>
 
-    <section id="settings" class="page">
-      <div class="section-heading">
-        <div><h2>Einstellungen</h2><p class="muted">Verwalte deine lokalen Daten.</p></div>
-      </div>
-      <div class="settings-card">
-        <h3>Lokaler Speicher</h3>
-        <p>Profile und Einstellungen werden in diesem Browser gespeichert.</p>
-        <button class="secondary-btn" id="export-data">Daten exportieren</button>
-        <button class="danger-btn" id="reset-data">Alle Daten zurücksetzen</button>
-      </div>
-      <div class="settings-card">
-        <h3>Über AFK Hub</h3>
-        <p>Diese Website ist ein lokales Dashboard mit Demo-Sitzungen. Sie sendet keine Eingaben an Roblox und automatisiert keine anderen Apps.</p>
-      </div>
+    <section class="disclaimer">
+      <span class="info-icon">i</span>
+      <p>
+        <strong>Hinweis zur aktuellen Version:</strong>
+        Die Demo-Sitzungen simulieren Aktionen nur auf der Website.
+        AFK Hub steuert Roblox oder andere Apps nicht automatisch.
+        Die dargestellten Spiele dienen als Beispiele und sind keine offiziellen Partnerschaften.
+      </p>
     </section>
 
-    <footer>AFK HUB <span>•</span> GAMING CONTROL CENTER</footer>
+    <section class="final-cta">
+      <div class="cta-glow"></div>
+      <span class="section-tag">AFK HUB</span>
+      <h2>Alles beginnt mit<br><span>einem Überblick.</span></h2>
+      <p>Entdecke die Funktionen und lerne AFK Hub kennen.</p>
+      <a href="#features" class="button button-primary">
+        Funktionen ansehen <span>↗</span>
+      </a>
+    </section>
   </main>
 
-  <div id="modal" class="modal hidden">
-    <div class="modal-card">
-      <button class="modal-close" id="modal-close">×</button>
-      <h2 id="modal-title">Neues Profil</h2>
-      <p class="muted">Passe deine Demo-Konfiguration an.</p>
-      <form id="profile-form">
-        <label for="profile-name">Profilname</label>
-        <input id="profile-name" maxlength="30" placeholder="z. B. Mein Profil" required>
-        <label for="profile-game">Spiel</label>
-        <select id="profile-game"></select>
-        <label for="profile-action">Demo-Aktion</label>
-        <select id="profile-action">
-          <option value="click">Klicks simulieren</option>
-          <option value="walk">Bewegung simulieren</option>
-          <option value="interact">Interaktionen simulieren</option>
-          <option value="idle">Nur Sitzung anzeigen</option>
-        </select>
-        <button class="primary-btn full-width" type="submit">Profil speichern</button>
-      </form>
-    </div>
-  </div>
-
-  <div id="toast" class="toast"></div>
-  <script src="app.js"></script>
+  <footer>
+    <a href="#" class="logo">AFK <span class="purple">HUB</span></a>
+    <p>Gaming Control Center</p>
+    <span class="copyright">© 2026 AFK Hub</span>
+  </footer>
 </body>
 </html>
